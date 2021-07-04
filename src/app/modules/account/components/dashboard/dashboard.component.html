@@ -1,0 +1,24 @@
+<!-- search??? elasticsearch? -->
+<div class="d-flex flex-column my-3 mx-5">
+  <div class="d-flex justify-content-between">
+    <div>
+      <h1 class="mb-0">Get started now, BGxArrow</h1>
+      <h4>Your personal banking experience</h4>
+    </div>
+    <div>
+      <mat-form-field appearance="outline">
+        <mat-label>Search</mat-label>
+        <input matInput autocomplete="off" [formControl]="search" placeholder="Transactions..." />
+        <mat-icon matSuffix>search</mat-icon>
+      </mat-form-field>
+    </div>
+  </div>
+  <div class="d-flex">
+    <app-account>
+
+    </app-account>
+  </div>
+  <div class="d-flex">
+    <router-outlet name="transactions"></router-outlet>
+  </div>
+</div>

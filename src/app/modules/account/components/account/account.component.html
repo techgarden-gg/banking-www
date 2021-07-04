@@ -1,0 +1,10 @@
+<div class="d-flex">
+  <mat-card class="me-3" *ngFor="let index of [1, 2, 3, 4, 5]">
+    <h3 style="font-weight: 500">Account {{index}}</h3>
+    <h4>{{ power(44, index) | currency}}</h4>
+    <div class="d-flex justify-content-between">
+      <mat-icon>toll</mat-icon>
+      <div class="ms-3">************1234</div>
+    </div>
+  </mat-card>
+</div>
